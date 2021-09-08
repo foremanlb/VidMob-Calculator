@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Numpad from '../Numpad/Numpad'
+import './Calculator.css'
 
 export default function Input() {
   const [equation, setEquation] = useState('')
@@ -10,12 +11,18 @@ export default function Input() {
     setEquation(`${e.target.value}`)
   }
 
+  const calculate = (e) => {
+    e.preventDefault()
+    console.log(e.target[0].value)
+  }
+
   return (
-    <form>
+    <form id='calculator' onSubmit={calculate}>
       <label>
         Enter Equation:
-        <input type='text' id='calculator-input' value={equation} onChange={handleChange}></input>
+        <input type='text' id='calculator-input' value={equation} onChange={handleChange} autoFocus></input>
       </label>
+      <button type='submit' value={equation}>Calculate</button>
       <Numpad equation={equation} setEquation={setEquation} />
     </form>
   )

@@ -2,13 +2,14 @@ import React from 'react'
 
 export default function Numpad(props) {
   const handleClick = (e) => {
-    e.preventDefault()
+    console.log(e)
     props.setEquation(props.equation.concat(e.target.value))
+    e.target.blur()
   }
 
   const handleClear = (e) => {
-    e.preventDefault()
     props.setEquation('')
+    e.target.blur()
   }
 
   return (
