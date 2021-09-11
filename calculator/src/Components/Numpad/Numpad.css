@@ -6,6 +6,7 @@
 #numpad {
   display: flex;
   justify-content: center;
+  margin: 50px;
 }
 
 #clear {
@@ -14,4 +15,11 @@
 
 #divide {
   grid-column: 4;
+}
+
+.numpad-buttons {
+  margin: 2px;
+  background-color: aqua;
+  border: 2px outset rgb(138, 138, 138);
+  border-radius: 5px;
 }
