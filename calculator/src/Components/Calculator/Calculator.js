@@ -166,7 +166,8 @@ export default function Input() {
       </label>
       <button type='submit' value={equation}>Calculate</button>
       <Numpad equation={equation} setEquation={setEquation} />
-      <h2>Answer:{answer}</h2>
+      <h2>Answer:</h2>
+      <h1>{answer}</h1>
     </form>
   )
 }
