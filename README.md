@@ -4,7 +4,7 @@
 
 This calculator was made for VidMob. It was designed utilizing Javascript within a React App.
 
-![VidMob Calculator Deployment](https://lucid-jackson-38eb93.netlify.app/)
+[VidMob Calculator Deployment](https://lucid-jackson-38eb93.netlify.app/)
 
 ## Instructions
 
